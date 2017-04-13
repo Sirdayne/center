@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "Qanelas-Regular";
+    src: url("../fonts/Qanelas-Regular.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Qanelas-Bold";
+    src: url("../fonts/Qanelas-Bold.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Qanelas-Semibold";
+    src: url("../fonts/Qanelas-SemiBold.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Qanelas-Medium";
+    src: url("../fonts/Qanelas-Medium.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Qanelas-Light";
+    src: url("../fonts/Qanelas-Light.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}

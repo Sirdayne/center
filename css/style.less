@@ -1,0 +1,179 @@
+/* CONSTANTS */
+
+@f-r: "Qanelas-Regular";
+@f-b: "Qanelas-Bold";
+@f-s: "Qanelas-Semibold";
+@f-m: "Qanelas-Medium";
+@f-l: "Qanelas-Light";
+
+@color: #44749d;
+@red: #e94440;
+
+button, input{
+    font-family: @f-r;
+}
+
+h3 { float: left; width: 100%; font-size: 34px; font-family: @f-b; text-align: center; color: @color; }
+
+.btn-land{ display: block; margin: 0 auto; box-sizing: border-box; padding:7px 25px; width: auto; outline:none; border:none; border-radius: 25px; border: 1px solid #960000; background: #960000; color: #fff;  -webkit-transition: .3s linear; transition: .3s linear; font-weight: bold; font-size: 11px; 
+    &:hover{ background: #fff; color: #960000; }
+}
+
+.wrap{float: left; width: 80%; margin-left: 10%; margin-right: 10%; height: auto;}
+
+.modal-wrapper{ position: fixed; height: 0; top: 0; left: 0; width: 100%; height: 9999px; z-index: 12; background: #fff; z-index: 1000; display: none; }
+
+.modal-wrapper.js-active{ display: block; }
+
+.modal-cabinet{ float: left; width: 100%; margin-top: 200px; 
+    .call-row{margin-top: 10px; 
+        button{ width: 180px; }
+    }
+}
+
+.modal-close{  position: absolute; height: 20px;  width: 20px; 
+    top: 25px; right: 25px; cursor: pointer;
+    
+    img{ height: inherit; width: auto;}
+}
+
+.opacity-one{ opacity: 1; }
+
+.btns-row{ float: left; width: 100%; margin-top: 25px;}
+
+.anchors{ float: left; width: 100%; height: 0;}
+
+.navigation{ float: left; width: 100%; height: 40px; padding: 5px 0; background: @color; }
+
+.nav-logo{ float: left; width: 40px; height: 40px;
+    img{ display: block; width: 100%; height: auto;}
+}
+
+.nav-title{ float: left; width: auto; margin-left: 10px; font-size: 12px; line-height: 40px; color: #fff; font-family: @f-l; }
+
+.nav-right{ float: right; width: auto; }
+
+.nav{ float: left; width: auto; margin-left: 30px; -webkit-transition: .4s linear; transition: .4s linear; color: #fff; font-size: 12px; line-height: 40px; font-family: @f-m; cursor: pointer;
+    &:hover{ color: @red; }
+} 
+
+.section-price{ float: left; width: 100%; }
+
+.section-price h3{ margin-top: 40px; margin-bottom: 40px; }
+
+.sp-block{ float: left; width: ~"calc(50% - 50px)"; height: auto; box-sizing: border-box;  position: relative; }
+
+.sp-block-1{ margin-right: 50px; background: url(../img/users.png) no-repeat; padding: 20px 0 20px 12%; background-size: auto 100%; }
+
+.sp-block-2{ margin-left: 50px; background: url(../img/user.png) no-repeat; padding: 20px 0 20px 8%; background-size: auto 100%; }
+
+.sp-block h4{ float: left; width: 100%; margin-top: 15px; font-size: 17px; color: @color; text-transform: uppercase; font-family: @f-s; }
+
+.sp-line { float: left; width: 175px; height: 1px; background: #000; margin-top: 10px; margin-bottom: 10px; } 
+
+.sp-block p { float: left; width: 100%; font-size: 15px; color: #000; }
+
+.sp-discount{ float: left; width: 100%; 
+    h4{ float: left; margin-top: 60px; width: 100%; text-align: center; font-size: 22px; color: @red;}
+}
+
+.spd-wrap{ float: left; width: 100%; text-align: center; margin-top: 10px; }
+
+.spd-block{ display: inline-block; width: 300px; min-height: 100px; height: auto; position: relative; }
+
+.spd-back{ position: absolute; top:0; left: 0; text-align: left; font-size: 80px; line-height: 80px; height: 80px; color: @red; opacity: 0.4; font-family: @f-b;  }
+
+.spd-rows{ position: absolute; top: 12px; left: 70px; width: 300px; height: auto; 
+    p{ float: left; text-align: left; width: 100%; margin-top: 6px; font-size: 14px; color: @red; opacity: 1; font-family: @f-m; font-weight: bold;}
+}
+
+.section-cezar{ float: left; width: 100%; }
+
+.section-cezar h3{ margin-top: 70px; margin-bottom: 10px; color: @red; }
+
+.sc-left{ float: left; width: 50%; height: auto; box-sizing: border-box; padding: 150px 0 120px; background: url(../img/project-main.svg) center center no-repeat; background-size: 80% 80%;
+    p{ float: left; width: 100%; color: @red; font-size: 30px; font-family: @f-s;  }
+}
+
+.sc-right{ float: left; width: 47%; margin-left: 3%; box-sizing: border-box; padding-top: 110px; }
+
+.scr-row{float: left; width: 100%; font-size: 14px; color: @red; margin-top: 10px; padding: 10px 0 10px 31px;}
+
+.scr-1{ background: url(../img/project-1.png) no-repeat; background-size: auto 100%; }
+
+.scr-2{ background: url(../img/project-2.png) no-repeat; background-size: auto 100%; }
+
+.scr-3{ background: url(../img/project-3.png) no-repeat; background-size: auto 100%; }
+
+.wrap-btn{ float: left; width: 100%; margin-top: 25px; text-align: center; }
+
+.btn-more{ display: inline-block; padding: 7px 45px; outline: none; border: 1px solid @red; background: rgba(255,255,255,0); -webkit-transition: .4s linear; transition: .4s linear; color: @red; font-size: 13px; font-family: @f-m;  
+    &:hover{ color: #fff; background: @red; }
+}
+
+.section-achievement{ float: left; width: 100%; 
+    h3{ margin-top: 70px; margin-bottom: 60px;}
+}
+
+.sa-row{ float: left; width: 100%; }
+
+.sa-left-1{ float: left; width: ~"calc(60% - 70px)";  margin-left: 70px; box-sizing: border-box; padding: 55px 55px 55px 130px; background: @color; position: relative; 
+    h4{ float: left; width: 100%; color: #fff; font-size: 18px; font-family: @f-m; font-weight: normal; }
+    p{ float: left; width: 100%; margin-top: 15px; color: #fff; font-size: 15px; font-family: @f-l; }
+    span{ font-family: @f-m; letter-spacing: 1px; }
+    img{ position: absolute; width: 210px; height: auto; top: 5px; left: -80px; }
+}
+
+.sa-right-1{ float: left; width: ~"calc(30% - 40px)"; margin-left: 40px; 
+    h4{ float: left; width: 100%; font-size: 120px; line-height: 120px; height: 120px; color: @color; font-family: @f-b; font-weight: normal; }
+    p{ float: left; width: 100%; font-size: 15px; font-family: @f-l; }
+}
+
+.sa-second{ float: left; width: 100%; margin-top: 50px; margin-bottom: 50px; 
+    h4{ float: left; width: 100%; text-align: center; font-size: 120px; line-height: 120px; height: 120px; color: @color; font-family: @f-b; font-weight: normal; }
+    p{ float: left; width: 100%; text-align: center; margin-top: 15px; color: #000; font-size: 16px; font-family: @f-r; }
+    span{ font-family: @f-s; letter-spacing: 1px; }
+    
+}
+
+.sa-left-2{ float: left; width: ~"calc(30% - 40px)"; margin-right: 40px;
+    h4{ float: left; width: 100%; font-size: 120px; line-height: 120px; height: 120px; color: @color; font-family: @f-b; font-weight: normal; }
+    p{ float: left; width: 100%; font-size: 15px; font-family: @f-l; }
+    span{ font-family: @f-m; letter-spacing: 1px; }  
+}
+
+.sa-right-2{ float: left; width: 60%; box-sizing: border-box; padding: 55px; background: @color; position: relative; 
+    h4{ float: left; width: 100%; color: #fff; font-size: 18px; font-family: @f-m; font-weight: normal; }
+    p{ float: left; width: 100%; margin-top: 15px; color: #fff; font-size: 15px; font-family: @f-l; }
+    span{ font-family: @f-m; letter-spacing: 1px; }
+}
+
+.sa-prizes{ float: left; width: 100%; margin-top: 50px; }
+
+.sap-left{ float: left; width: 40%; height: 300px; background: @red;
+    h4{ float: left; width: 100%; margin-top: 155px; text-align: center; font-size: 25px; color: #fff; font-family: @f-b; font-weight: normal; }
+}
+
+.sap-right{ float: left; width: ~"calc(60% - 40px)"; margin-left: 40px; }
+
+.section-gallery{ float: left; width: 100%;
+    h3{ margin-top: 85px; margin-bottom: 55px;}
+}
+
+.footer{ float: left; width: 100%;}
+
+.footer-left{ float: left; width: ~"calc(50% - 40px)"; margin-right: 40px; height: 300px; }
+
+.footer-right{ float: left; width: ~"calc(50% - 40px)"; margin-left: 40px; 
+    h3{ margin-top: 70px; margin-bottom: 70px;}
+}
+
+.fr-row{float: left; width: 100%; font-size: 16px; color: @color; margin-top: 10px; padding: 10px 0 10px 20px;}
+
+.fr-1{ background: url(../img/fr-1.png) no-repeat; background-size: auto 100%; }
+
+.fr-2{ background: url(../img/fr-2.png) no-repeat; background-size: auto 100%; }
+
+.fr-3{ background: url(../img/fr-3.png) no-repeat; background-size: auto 100%; }
+
+
