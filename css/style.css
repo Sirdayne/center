@@ -539,3 +539,57 @@ h3 {
   background: url(../img/fr-3.png) no-repeat;
   background-size: auto 100%;
 }
+.fr-icons {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+}
+.fr-icon {
+  float: right;
+  width: 30px;
+  height: auto;
+  margin-left: 15px;
+}
+.fr-icon path {
+  fill: #7c9dba;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+.fr-icon svg {
+  width: 100%;
+  height: auto;
+}
+.fr-icon svg:hover path {
+  fill: #44749D;
+}
+.gi-line {
+  float: left;
+  width: 100%;
+  height: 1px;
+  margin-top: 70px;
+  margin-bottom: 90px;
+  position: relative;
+}
+.gi-line p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 14px;
+  color: #44749d;
+  z-index: 2;
+}
+.gi-line path {
+  fill: #adbbc8;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+.gi-line svg {
+  position: absolute;
+  width: 40px;
+  top: -13px;
+  left: 310px;
+  z-index: 1;
+}
+.gi-line:hover path {
+  fill: #8fa7bb;
+}
