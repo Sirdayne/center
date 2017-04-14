@@ -53,43 +53,150 @@ h3 {
   margin-right: 0%;
   height: auto;
 }
-.modal-wrapper {
+.modal-back {
   position: fixed;
-  height: 0;
+  display: none;
   top: 0;
   left: 0;
-  width: 100%;
   height: 9999px;
-  z-index: 12;
-  background: #fff;
-  z-index: 1000;
-  display: none;
-}
-.modal-wrapper.js-active {
-  display: block;
-}
-.modal-cabinet {
-  float: left;
   width: 100%;
-  margin-top: 200px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 15;
 }
-.modal-cabinet .call-row {
-  margin-top: 10px;
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  z-index: 16;
+  text-align: center;
 }
-.modal-cabinet .call-row button {
-  width: 180px;
+.modal-call {
+  display: none;
+  margin: 150px auto 0;
+  width: 650px;
+  height: auto;
+  box-sizing: border-box;
+  background: #fff;
+  border: 2px solid #44749d;
+  padding: 35px 5px;
+  position: relative;
+}
+.modal-call h4 {
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #44749d;
+  font-size: 16px;
+  font-family: "Qanelas-Semibold";
+}
+.modal-call form {
+  width: 100%;
+}
+.md-row {
+  width: 100%;
+}
+.md-row input {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px 35px;
+  width: calc(50% - 50px);
+  margin: 10px 20px;
+  outline: none;
+  border: 1px solid #44749d;
+  text-align: center;
+  font-size: 14px;
+}
+.md-btn {
+  display: inline;
+  box-sizing: border-box;
+  padding: 15px 35px;
+  width: calc(50% - 50px);
+  margin: 10px 20px;
+  outline: none;
+  border: 1px solid #44749d;
+  background: #44749d;
+  color: #fff;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  font-family: "Qanelas-Light";
+  font-weight: normal;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+.md-btn:hover {
+  background: rgba(255, 255, 255, 0);
+  color: #44749d;
 }
 .modal-close {
   position: absolute;
-  height: 20px;
-  width: 20px;
-  top: 25px;
-  right: 25px;
+  top: 15px;
+  right: 15px;
+  height: auto;
+  width: auto;
   cursor: pointer;
 }
 .modal-close img {
-  height: inherit;
+  display: block;
+  height: 20px;
   width: auto;
+}
+.modal-more {
+  display: none;
+  margin: 150px auto 0;
+  width: 650px;
+  height: auto;
+  box-sizing: border-box;
+  background: #fff;
+  border: 2px solid #e94440;
+  padding: 35px 5px;
+  position: relative;
+}
+.modal-more h4 {
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #e94440;
+  font-size: 16px;
+  font-family: "Qanelas-Semibold";
+}
+.modal-more form {
+  width: 100%;
+}
+.modal-more input {
+  border: 1px solid #e94440;
+}
+.modal-more .md-btn {
+  border: 1px solid #e94440;
+  background: #e94440;
+}
+.modal-more .md-btn:hover {
+  background: rgba(255, 255, 255, 0);
+  color: #e94440;
+}
+.md-btn {
+  display: inline;
+  box-sizing: border-box;
+  padding: 15px 35px;
+  width: calc(50% - 50px);
+  margin: 10px 20px;
+  outline: none;
+  border: 1px solid #44749d;
+  background: #44749d;
+  color: #fff;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  font-family: "Qanelas-Light";
+  font-weight: normal;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+.md-btn:hover {
+  background: rgba(255, 255, 255, 0);
+  color: #44749d;
 }
 .opacity-one {
   opacity: 1;
@@ -105,11 +212,13 @@ h3 {
   height: 0;
 }
 .navigation {
-  float: left;
+  position: fixed;
+  float: none;
   width: 100%;
   height: 40px;
   padding: 5px 0;
   background: #44749d;
+  z-index: 6;
 }
 .nav-logo {
   float: left;
@@ -138,23 +247,30 @@ h3 {
   float: left;
   width: auto;
   margin-left: 30px;
-  -webkit-transition: .4s linear;
-  transition: .4s linear;
   color: #fff;
   font-size: 12px;
   line-height: 40px;
   font-family: "Qanelas-Medium";
   cursor: pointer;
 }
-.nav:hover {
+.nav:hover a {
+  color: #e94440;
+}
+.nav a {
+  color: #fff;
+  -webkit-transition: .4s linear;
+  transition: .4s linear;
+}
+.nav-active a {
   color: #e94440;
 }
 .header {
   float: left;
   width: 100%;
+  padding-top: 120px;
 }
 .header h3 {
-  margin-top: 60px;
+  margin-top: 0;
   margin-bottom: 55px;
 }
 .head-left {
@@ -667,7 +783,7 @@ h3 {
 }
 .prizes-row {
   float: left;
-  width: calc(100% - 100px);
+  width: calc(100% - 120px);
   margin-left: 60px;
   margin-top: 30px;
   box-sizing: border-box;

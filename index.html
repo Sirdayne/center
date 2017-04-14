@@ -27,32 +27,49 @@
   
 </head>
 <body>    
-  
-    <!-- MODALS -->
-    <div class="modal-wrapper">
-       
-        <div class="modal-cabinet">
-            <div class="modal-close"></div>
+        
+<div class="modal-back"></div>
+
+        
+<div class="modal-wrapper">     
+        <div class="modal-call">
+            <div class="modal-close"><img src="./img/close-blue.svg" alt=""></div>
+            
+            <h4>ЗАПОЛНИТЕ ФОРМУ НИЖЕ, И НАШИ МЕНЕДЖЕРЫ СВЯЖУТСЯ С ВАМИ</h4>
             
             <form method="post" action="">
 
-                <div class="call-row">
-                    <div class="call-input">
-                        <input type="tel" id="client-tel-for-consult" placeholder="Номер телефона" >
-                    </div>
-                </div>
-                
-                <div class="call-row">
-                    <div class="call-input">
-                        <input type="password" placeholder="Пароль" >
-                    </div>
-                </div>
+                <div class="md-row">
 
-                <div class="call-row"><button class="btn-call">ОТПРАВИТЬ</button></div>
+                    <input type="text" name="Имя" placeholder="Ваше имя">
 
+                    <input type="tel" name="Телефон" id="client-tel-for-consult" placeholder="Ваш телефон">
+                    
+                    <button class="md-btn">ОТПРАВИТЬ</button>
+                    
+                </div>
             </form>
         </div>
-    </div>
+        
+        <div class="modal-more">
+            <div class="modal-close"><img src="./img/close-red.svg" alt=""></div>
+            
+            <h4>УЗНАЙТЕ ПОДРОБНЕЕ ОБ АВТОРСКОМ ПРОЕКТЕ ЦЕЗАРЬ</h4>
+            
+            <form method="post" action="">
+
+                <div class="md-row">
+
+                    <input type="text" name="Имя" placeholder="Ваше имя">
+
+                    <input type="tel" name="Телефон" id="client-tel-for-consult-2" placeholder="Ваш телефон">
+                    
+                    <button class="md-btn">ОТПРАВИТЬ</button>
+                    
+                </div>
+            </form>
+        </div>
+</div>
 
 <section class="navigation">
     <div class="wrap">
@@ -60,18 +77,18 @@
         <div class="nav-title">УЧЕБНЫЙ ЦЕНТР #1</div>
         
         <div class="nav-right">
-            <div class="nav">ГЛАВНАЯ</div>
-            <div class="nav">СТОИМОСТЬ</div>
-            <div class="nav">ЦЕЗАРЬ</div>
-            <div class="nav">ПРЕПОДАВАТЕЛИ</div>
-            <div class="nav">ДОСТИЖЕНИЯ</div>
-            <div class="nav">ГАЛЕРЕЯ</div>
-            <div class="nav">КОНТАКТЫ</div>
+            <div class="nav"><a href="#main">ГЛАВНАЯ</a></div>
+            <div class="nav"><a href="#price">СТОИМОСТЬ</a></div>
+            <div class="nav"><a href="#cezar">ЦЕЗАРЬ</a></div>
+            <div class="nav"><a href="#teacher">ПРЕПОДАВАТЕЛИ</a></div>
+            <div class="nav"><a href="#achievement">ДОСТИЖЕНИЯ</a></div>
+            <div class="nav"><a href="#gallery">ГАЛЕРЕЯ</a></div>
+            <div class="nav"><a href="#contact">КОНТАКТЫ</a></div>
         </div>
     </div>
 </section>
 
-<header class="header">
+<header class="header" id="main">
     <div class="wrap">
        
         <h3>ПОДБЕРИТЕ ПРОГРАММУ ПОДГОТОВКИ В УЧЕБНОМ ЦЕНТРЕ #1</h3>
@@ -115,7 +132,7 @@
                     </div>
 
                     <div class="wrap-btn">
-                        <button class="btn-more btn-more-blue">ЗАПИСАТЬСЯ</button>
+                        <button class="btn-more btn-more-blue js-call">ЗАПИСАТЬСЯ</button>
                     </div>
 
                 </div>
@@ -148,7 +165,7 @@
                     </div>
 
                     <div class="wrap-btn">
-                        <button class="btn-more btn-more-blue">ЗАПИСАТЬСЯ</button>
+                        <button class="btn-more btn-more-blue js-call">ЗАПИСАТЬСЯ</button>
                     </div>
 
                 </div>
@@ -189,7 +206,7 @@
                     </div>
 
                     <div class="wrap-btn">
-                        <button class="btn-more btn-more-blue">ЗАПИСАТЬСЯ</button>
+                        <button class="btn-more btn-more-blue js-call">ЗАПИСАТЬСЯ</button>
                     </div>
 
                 </div>
@@ -225,7 +242,7 @@
                     </div>
 
                     <div class="wrap-btn">
-                        <button class="btn-more btn-more-blue">ЗАПИСАТЬСЯ</button>
+                        <button class="btn-more btn-more-blue js-call">ЗАПИСАТЬСЯ</button>
                     </div>
 
                 </div>
@@ -252,7 +269,7 @@
                     </div>
 
                     <div class="wrap-btn">
-                        <button class="btn-more btn-more-blue">ЗАПИСАТЬСЯ</button>
+                        <button class="btn-more btn-more-blue js-call">ЗАПИСАТЬСЯ</button>
                     </div>
 
                 </div>
@@ -262,7 +279,7 @@
     </div>
 </header>
 
-<section class="section-price">
+<section class="section-price" id="price">
     <div class="wrap">
        
         <h3>СТОИМОСТЬ ОБУЧЕНИЯ</h3>
@@ -302,7 +319,7 @@
     </div>
 </section>
 
-<section class="section-cezar">
+<section class="section-cezar" id="cezar">
     <div class="wrap">
         
         <h3>ПРОЕКТ ЦЕЗАРЬ</h3>
@@ -325,13 +342,13 @@
         </div>
         
         <div class="wrap-btn">
-            <button class="btn-more">ПОДРОБНЕЕ О ПРОЕКТЕ</button>
+            <button class="btn-more js-more">ПОДРОБНЕЕ О ПРОЕКТЕ</button>
         </div>
         
     </div>
 </section>
    
-<section class="section-teacher">
+<section class="section-teacher" id="teacher">
     <div class="wrap">
         <h3>ПРЕПОДАВАТЕЛИ</h3>
     </div>
@@ -531,7 +548,7 @@
     </div>
 </section>
     
-<section class="section-achievement">
+<section class="section-achievement" id="achievement">
     <div class="wrap">
         <h3>ДОСТИЖЕНИЯ</h3>
         
@@ -635,7 +652,7 @@
     </div>
 </section>
    
-<section class="section-gallery">
+<section class="section-gallery" id="gallery">
     <div class="wrap">
         <h3>ГАЛЕРЕЯ</h3>
         
@@ -660,7 +677,7 @@
     </div>
 </section>
    
-<footer class="footer">
+<footer class="footer" id="contact">
     <div class="wrap-footer">
        
         <div class="footer-left" id="map" style="float:left; width: calc(53% - 40px); margin-right: 40px; height: 600px; position:relative; z-index:1;"></div>
@@ -747,7 +764,6 @@
 <script type="text/javascript">	
     jQuery(function($){$("#client-tel-for-consult").mask("+7(999)999-99-99");});
     jQuery(function($){$("#client-tel-for-consult-2").mask("+7(999)999-99-99");});
-    jQuery(function($){$("#client-tel-for-consult-3").mask("+7(999)999-99-99");});
 </script>
 
 <script src="js/slick.min.js"></script>
@@ -759,11 +775,11 @@
 
     DG.then(function () {
         map = DG.map('map', {
-            center: [51.097735, 71.431303],
+            center: [51.149552, 71.414459],
             zoom: 16
         });
 
-        DG.marker([51.097748, 71.431679]).addTo(map);
+        DG.marker([51.149336, 71.415317]).addTo(map);
     });
 </script>
 

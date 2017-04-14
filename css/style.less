@@ -23,21 +23,38 @@ h3 { float: left; width: 100%; font-size: 34px; font-family: @f-b; text-align: c
 .wrap-footer{float: left; width: 90%; margin-left: 0%; margin-right: 10%; height: auto;}
 .wrap-teacher{float: left; width: 90%; margin-left: 10%; margin-right: 0%; height: auto;}
 
+.modal-back{position: fixed; display: none; top:0; left: 0; height: 9999px; width: 100%; background: rgba(0,0,0,0.5); z-index: 15; }
 
-.modal-wrapper{ position: fixed; height: 0; top: 0; left: 0; width: 100%; height: 9999px; z-index: 12; background: #fff; z-index: 1000; display: none; }
+.modal-wrapper{ position: fixed; top: 0; left:0; height: 1px; width: 100%; z-index: 16; text-align: center; }
 
-.modal-wrapper.js-active{ display: block; }
+.modal-call{ display: none; margin: 150px auto 0; width: 650px; height: auto; box-sizing: border-box; background: #fff; border: 2px solid @color; padding: 35px 5px; position: relative; 
+    h4{ width: 100%; margin-top: 25px; margin-bottom: 25px; text-align: center; color: @color; font-size: 16px; font-family: @f-s; }
+    form{ width: 100%; }
+}
 
-.modal-cabinet{ float: left; width: 100%; margin-top: 200px; 
-    .call-row{margin-top: 10px; 
-        button{ width: 180px; }
+.md-row{ width: 100%;
+    input{ display: inline-block; box-sizing: border-box; padding: 10px 35px; width: ~"calc(50% - 50px)"; margin: 10px 20px; outline: none; border: 1px solid @color; text-align: center; font-size: 14px;}
+}
+
+.md-btn{ display: inline; box-sizing: border-box; padding: 15px 35px; width: ~"calc(50% - 50px)"; margin: 10px 20px; outline: none; border: 1px solid @color; background: @color; color: #fff; -webkit-transition: .3s linear; transition: .3s linear; font-family: @f-l; font-weight: normal; font-size: 10px; letter-spacing: 1px;
+    &:hover{ background: rgba(255,255,255,0); color: @color; }
+}
+
+.modal-close{ position: absolute; top: 15px; right: 15px; height: auto; width: auto; cursor: pointer;
+    img{ display: block; height: 20px; width: auto; }
+}
+
+.modal-more{ display: none; margin: 150px auto 0; width: 650px; height: auto; box-sizing: border-box; background: #fff; border: 2px solid @red; padding: 35px 5px; position: relative; 
+    h4{ width: 100%; margin-top: 25px; margin-bottom: 25px; text-align: center; color: @red; font-size: 16px; font-family: @f-s; }
+    form{  width: 100%; }
+    input{ border: 1px solid @red; }
+    .md-btn{ border: 1px solid @red; background: @red;
+            &:hover{ background: rgba(255,255,255,0); color: @red; }
     }
 }
 
-.modal-close{  position: absolute; height: 20px;  width: 20px; 
-    top: 25px; right: 25px; cursor: pointer;
-    
-    img{ height: inherit; width: auto;}
+.md-btn{ display: inline; box-sizing: border-box; padding: 15px 35px; width: ~"calc(50% - 50px)"; margin: 10px 20px; outline: none; border: 1px solid @color; background: @color; color: #fff; -webkit-transition: .3s linear; transition: .3s linear; font-family: @f-l; font-weight: normal; font-size: 10px; letter-spacing: 1px;
+    &:hover{ background: rgba(255,255,255,0); color: @color; }
 }
 
 .opacity-one{ opacity: 1; }
@@ -46,7 +63,7 @@ h3 { float: left; width: 100%; font-size: 34px; font-family: @f-b; text-align: c
 
 .anchors{ float: left; width: 100%; height: 0;}
 
-.navigation{ float: left; width: 100%; height: 40px; padding: 5px 0; background: @color; }
+.navigation{ position: fixed; float: none; width: 100%; height: 40px; padding: 5px 0; background: @color; z-index: 6;}
 
 .nav-logo{ float: left; width: 40px; height: 40px;
     img{ display: block; width: 100%; height: auto;}
@@ -56,12 +73,15 @@ h3 { float: left; width: 100%; font-size: 34px; font-family: @f-b; text-align: c
 
 .nav-right{ float: right; width: auto; }
 
-.nav{ float: left; width: auto; margin-left: 30px; -webkit-transition: .4s linear; transition: .4s linear; color: #fff; font-size: 12px; line-height: 40px; font-family: @f-m; cursor: pointer;
-    &:hover{ color: @red; }
+.nav{ float: left; width: auto; margin-left: 30px; color: #fff; font-size: 12px; line-height: 40px; font-family: @f-m; cursor: pointer;
+    &:hover a{ color: @red; }
+    a{ color: #fff; -webkit-transition: .4s linear; transition: .4s linear; }
 } 
 
-.header{ float: left; width: 100%; 
-    h3{ margin-top: 60px; margin-bottom: 55px;}
+.nav-active a{ color: @red; }
+
+.header{ float: left; width: 100%; padding-top: 120px;
+    h3{ margin-top: 0; margin-bottom: 55px;}
 }
 
 .head-left{ float: left; width: 50%; height: auto;
@@ -210,7 +230,7 @@ h3 { float: left; width: 100%; font-size: 34px; font-family: @f-b; text-align: c
     h5{ float: left; width: ~"calc(100% - 100px)"; margin-left: 80px; margin-top: 30px; color: @red; font-weight: normal; font-family: @f-b; font-size: 18px;}
 }
 
-.prizes-row{ float: left; width: ~"calc(100% - 100px)"; margin-left: 60px; margin-top: 30px; box-sizing: border-box; padding:5px 0 5px 20px; color: @red; font-size: 18px; position: relative; }
+.prizes-row{ float: left; width: ~"calc(100% - 120px)"; margin-left: 60px; margin-top: 30px; box-sizing: border-box; padding:5px 0 5px 20px; color: @red; font-size: 18px; position: relative; }
 
 .prm-1{ margin-top: 60px; }
 

@@ -5,15 +5,32 @@ $(document).ready(function(){
         $('.navigations').toggleClass('navigations-active');
     });
     
-    $('body').on('click','.js-cabinet' , function(){
-        $('.modal-wrapper').addClass('js-active');
+    $('body').on('click','.js-call' , function(){
+        $('.modal-call').show(500);
+        $('.modal-back').show(500);
+    });
+    
+    $('body').on('click','.js-more' , function(){
+        $('.modal-more').show(500);
+        $('.modal-back').show(500);
+    });
+    
+    $('body').on('click','.modal-back' , function(){
+        $('.modal-call').hide(500);
+        $('.modal-more').hide(500);
+        
+        $('.modal-back').hide(500);
     });
     
     $('body').on('click','.modal-close' , function(){
-        $('.modal-wrapper').removeClass('js-active');
+        $('.modal-call').hide(500);
+        $('.modal-more').hide(500);
+        
+        $('.modal-back').hide(500);
     });
     
-    $('.section-about').waypoint({
+    /*
+    $('.section-price').waypoint({
         handler: function(direction) {
 
             if (direction === 'down') {
@@ -25,17 +42,8 @@ $(document).ready(function(){
             }
 
         },
-        offset: 200
-    });
-    
-    function scrollToAnchor(aid){
-        var aTag = $("a[name='"+ aid +"']");
-        $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-    }
-
-    $('.js-want').click(function() {
-        scrollToAnchor('an-call');
-    });
+        offset: 0
+    });*/
     
          /* SLICK SLIDERS */
     
@@ -94,7 +102,7 @@ $(document).ready(function(){
             autoplaySpeed: 4000,
         });   
 
-        $('.navigations').InPageNav({
+        $('.navigation').InPageNav({
             currentClass: 'nav-active',
             scrollSpeed: 1000,
             scrollOffset: 60,
