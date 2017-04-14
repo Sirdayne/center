@@ -34,22 +34,22 @@ h3 {
 }
 .wrap {
   float: left;
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
   height: auto;
 }
 .wrap-footer {
   float: left;
-  width: 90%;
+  width: 85%;
   margin-left: 0%;
-  margin-right: 10%;
+  margin-right: 15%;
   height: auto;
 }
 .wrap-teacher {
   float: left;
-  width: 90%;
-  margin-left: 10%;
+  width: 85%;
+  margin-left: 15%;
   margin-right: 0%;
   height: auto;
 }
