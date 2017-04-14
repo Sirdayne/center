@@ -38,6 +38,41 @@ $(document).ready(function(){
     });
     
          /* SLICK SLIDERS */
+    
+        $('#slick-slider-main').slick({
+            centerMode: false,
+            slidesToShow: 1,
+            centerPadding: '0px',
+            arrows: true,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            customPaging : function(slider, i) {
+                var thumb = ['ЕНТ', 'НИШ', 'ЭКЗАМЕНЫ', 'SAT', 'ОЛИМПИАДЫ'];
+                return '<span class="slick-thumb">'+thumb[i]+'</span>';
+            },
+
+        });
+    
+        $('.slick-slider-s').slick({
+            centerMode: false,
+            slidesToShow: 2,
+            centerPadding: '0px',
+            arrows: true,
+            dots: false,
+            autoplay: true,
+            autoplaySpeed: 4000,
+        });
+    
+        $('#slick-slider-t').slick({
+            centerMode: false,
+            slidesToShow: 1,
+            centerPadding: '0px',
+            arrows: true,
+            dots: false,
+            autoplay: true,
+            autoplaySpeed: 4000,
+        });
 
         $('#slick-slider-0').slick({
             centerMode: false,

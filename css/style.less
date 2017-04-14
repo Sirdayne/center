@@ -20,6 +20,9 @@ h3 { float: left; width: 100%; font-size: 34px; font-family: @f-b; text-align: c
 }
 
 .wrap{float: left; width: 80%; margin-left: 10%; margin-right: 10%; height: auto;}
+.wrap-footer{float: left; width: 90%; margin-left: 0%; margin-right: 10%; height: auto;}
+.wrap-teacher{float: left; width: 90%; margin-left: 10%; margin-right: 0%; height: auto;}
+
 
 .modal-wrapper{ position: fixed; height: 0; top: 0; left: 0; width: 100%; height: 9999px; z-index: 12; background: #fff; z-index: 1000; display: none; }
 
@@ -57,13 +60,29 @@ h3 { float: left; width: 100%; font-size: 34px; font-family: @f-b; text-align: c
     &:hover{ color: @red; }
 } 
 
+.header{ float: left; width: 100%; 
+    h3{ margin-top: 60px; margin-bottom: 55px;}
+}
+
+.head-left{ float: left; width: 50%; height: auto;
+    img{ display: block; margin: auto; width: 70%; height: auto }
+}
+
+.head-right{ float: left; width: 50%; }
+
+.hr-row{ float: left; width: 90%; box-sizing: border-box; padding-left: 20px; margin-top: 35px; font-size: 14px; color: #000; position: relative; 
+    .hr-img{ position: absolute; top: -10px; left: 0; width: 30px; height: auto;
+        img{ display: block; width: 100%; height: auto; }
+    }
+}
+
 .section-price{ float: left; width: 100%; }
 
-.section-price h3{ margin-top: 40px; margin-bottom: 40px; }
+.section-price h3{ margin-top: 120px; margin-bottom: 40px; }
 
 .sp-block{ float: left; width: ~"calc(50% - 50px)"; height: auto; box-sizing: border-box;  position: relative; }
 
-.sp-block-1{ margin-right: 50px; background: url(../img/users.png) no-repeat; padding: 20px 0 20px 12%; background-size: auto 100%; }
+.sp-block-1{ margin-left: 50px; background: url(../img/users.png) no-repeat; padding: 20px 0 20px 12%; background-size: auto 100%; }
 
 .sp-block-2{ margin-left: 50px; background: url(../img/user.png) no-repeat; padding: 20px 0 20px 8%; background-size: auto 100%; }
 
@@ -79,7 +98,7 @@ h3 { float: left; width: 100%; font-size: 34px; font-family: @f-b; text-align: c
 
 .spd-wrap{ float: left; width: 100%; text-align: center; margin-top: 10px; }
 
-.spd-block{ display: inline-block; width: 300px; min-height: 100px; height: auto; position: relative; }
+.spd-block{ display: inline-block; width: 330px; min-height: 100px; height: auto; position: relative; }
 
 .spd-back{ position: absolute; top:0; left: 0; text-align: left; font-size: 80px; line-height: 80px; height: 80px; color: @red; opacity: 0.4; font-family: @f-b;  }
 
@@ -105,11 +124,44 @@ h3 { float: left; width: 100%; font-size: 34px; font-family: @f-b; text-align: c
 
 .scr-3{ background: url(../img/project-3.png) no-repeat; background-size: auto 100%; }
 
-.wrap-btn{ float: left; width: 100%; margin-top: 25px; text-align: center; }
+.wrap-btn{ float: left; width: 100%; margin-top: 35px; text-align: center; }
 
 .btn-more{ display: inline-block; padding: 7px 45px; outline: none; border: 1px solid @red; background: rgba(255,255,255,0); -webkit-transition: .4s linear; transition: .4s linear; color: @red; font-size: 13px; font-family: @f-m;  
     &:hover{ color: #fff; background: @red; }
 }
+
+.btn-more-blue{ color: @color; border: 1px solid @color; padding: 7px 75px;
+    &:hover{ color: #fff; background: @color; }
+}
+
+.section-teacher{ float: left; width: 100%;
+    h3{ margin-top: 75px; margin-bottom: 45px;}
+}
+
+.teacher-left{ float: left; width: 250px; height: auto; 
+    img{ display: block; width: 100%; height: auto; }    
+}
+
+.teacher-right{ float: left; width: ~"calc(90% - 320px)";  margin-left: 70px;
+    h4{ float: left; width: 100%; margin-bottom: 20px; font-family: @f-s; font-weight: normal; font-size: 26px; color: @color; }
+    p { float: left; width: 100%; color: #000; margin-top: 25px; font-size: 16px; }
+    h5{ float: left; width: 100%; margin-top: 20px;  font-family: @f-m; font-weight: normal; font-size: 16px; color: @color; }
+}
+
+.teacher-bottom{ float: left; width: 100%; margin-top: 40px; }
+
+.certificates{ float: right; width: 50%; box-sizing: border-box; padding: 15px 25px; border: 1px solid @color; border-right: none; height: 70px; -webkit-transition: .8s linear; transition: .8s linear;
+    h4{ float: left; margin-left: 10px; color: @color; font-size: 16px; line-height: 40px; height: 40px; }
+}
+
+.slick-current .certificates{ opacity: 1; }
+
+.certificate{ float: left; width: auto; height: 70px; margin-left: 10px;
+    img{ float: left; width: auto; height: 40px; vertical-align: top; }
+    p{ float: left; margin-left: 5px; font-size: 10px; line-height: 13px; color: #000; font-family: @f-m; }
+}
+
+
 
 .section-achievement{ float: left; width: 100%; 
     h3{ margin-top: 70px; margin-bottom: 60px;}
@@ -117,14 +169,14 @@ h3 { float: left; width: 100%; font-size: 34px; font-family: @f-b; text-align: c
 
 .sa-row{ float: left; width: 100%; }
 
-.sa-left-1{ float: left; width: ~"calc(60% - 70px)";  margin-left: 70px; box-sizing: border-box; padding: 55px 55px 55px 130px; background: @color; position: relative; 
+.sa-left-1{ float: left; width: ~"calc(65% - 70px)";  margin-left: 70px; box-sizing: border-box; padding: 55px 55px 55px 130px; background: @color; position: relative; 
     h4{ float: left; width: 100%; color: #fff; font-size: 18px; font-family: @f-m; font-weight: normal; }
     p{ float: left; width: 100%; margin-top: 15px; color: #fff; font-size: 15px; font-family: @f-l; }
     span{ font-family: @f-m; letter-spacing: 1px; }
-    img{ position: absolute; width: 210px; height: auto; top: 5px; left: -80px; }
+    img{ position: absolute; width: 190px; height: auto; top: 5px; left: -80px; }
 }
 
-.sa-right-1{ float: left; width: ~"calc(30% - 40px)"; margin-left: 40px; 
+.sa-right-1{ float: left; width: ~"calc(35% - 40px)"; margin-left: 40px; 
     h4{ float: left; width: 100%; font-size: 120px; line-height: 120px; height: 120px; color: @color; font-family: @f-b; font-weight: normal; }
     p{ float: left; width: 100%; font-size: 15px; font-family: @f-l; }
 }
@@ -136,13 +188,13 @@ h3 { float: left; width: 100%; font-size: 34px; font-family: @f-b; text-align: c
     
 }
 
-.sa-left-2{ float: left; width: ~"calc(30% - 40px)"; margin-right: 40px;
+.sa-left-2{ float: left; width: ~"calc(35% - 40px)"; margin-right: 40px;
     h4{ float: left; width: 100%; font-size: 120px; line-height: 120px; height: 120px; color: @color; font-family: @f-b; font-weight: normal; }
     p{ float: left; width: 100%; font-size: 15px; font-family: @f-l; }
     span{ font-family: @f-m; letter-spacing: 1px; }  
 }
 
-.sa-right-2{ float: left; width: 60%; box-sizing: border-box; padding: 55px; background: @color; position: relative; 
+.sa-right-2{ float: left; width: 65%; box-sizing: border-box; padding: 55px; background: @color; position: relative; 
     h4{ float: left; width: 100%; color: #fff; font-size: 18px; font-family: @f-m; font-weight: normal; }
     p{ float: left; width: 100%; margin-top: 15px; color: #fff; font-size: 15px; font-family: @f-l; }
     span{ font-family: @f-m; letter-spacing: 1px; }
@@ -150,21 +202,33 @@ h3 { float: left; width: 100%; font-size: 34px; font-family: @f-b; text-align: c
 
 .sa-prizes{ float: left; width: 100%; margin-top: 50px; }
 
-.sap-left{ float: left; width: 40%; height: 300px; background: @red;
-    h4{ float: left; width: 100%; margin-top: 155px; text-align: center; font-size: 25px; color: #fff; font-family: @f-b; font-weight: normal; }
+.sap-left{ float: left; width: 40%; height: 330px; background: @red;
+    h4{ float: left; width: 100%; margin-top: 150px; text-align: center; font-size: 25px; color: #fff; font-family: @f-b; font-weight: normal; }
 }
 
-.sap-right{ float: left; width: ~"calc(60% - 40px)"; margin-left: 40px; }
+.sap-right{ float: left; width: ~"calc(60% - 40px)"; margin-left: 40px; 
+    h5{ float: left; width: ~"calc(100% - 100px)"; margin-left: 80px; margin-top: 30px; color: @red; font-weight: normal; font-family: @f-b; font-size: 18px;}
+}
 
-.section-gallery{ float: left; width: 100%;
+.prizes-row{ float: left; width: ~"calc(100% - 100px)"; margin-left: 60px; margin-top: 30px; box-sizing: border-box; padding:5px 0 5px 20px; color: @red; font-size: 18px; position: relative; }
+
+.prm-1{ margin-top: 60px; }
+
+.prize{ position: absolute; top: 0px; left: 0; height: auto; width: 30px; 
+    img{ display: block; width: 100%; height: auto;}
+}
+
+.section-gallery{ float: left; width: 100%; position: relative;
     h3{ margin-top: 85px; margin-bottom: 55px;}
 }
 
-.footer{ float: left; width: 100%;}
+.slick-back{ position: absolute; top: 170px;left: 40%; width: 20%; height: 360px; background: #44749d; z-index: 1; }
 
-.footer-left{ float: left; width: ~"calc(50% - 40px)"; margin-right: 40px; height: 300px; }
+.footer{ float: left; width: 100%; margin-top: 80px;}
 
-.footer-right{ float: left; width: ~"calc(50% - 40px)"; margin-left: 40px; 
+.footer-left{ float: left; width: ~"calc(53% - 40px)"; margin-right: 40px; height: 300px; }
+
+.footer-right{ float: left; width: ~"calc(47% - 40px)"; margin-left: 40px; 
     h3{ margin-top: 70px; margin-bottom: 70px;}
 }
 
@@ -178,17 +242,17 @@ h3 { float: left; width: 100%; font-size: 34px; font-family: @f-b; text-align: c
 
 .fr-icons{ float: left; width: 100%; margin-top: 20px; }
 
-.fr-icon{ float: right; width: 30px; height: auto; margin-left: 15px;
+.fr-icon{ float: right; width: 35px; height: auto; margin-left: 15px;
     path{ fill: #7c9dba; -webkit-transition: .3s linear; transition: .3s linear;}
     svg{ width: 100%; height: auto;
         &:hover path{ fill: #44749D}
     }
 }
 
-.gi-line{ float: left; width: 100%; height: 1px; margin-top: 70px; margin-bottom: 90px; position: relative; 
-    p{ position: absolute; top: 0; left: 0; font-size: 14px; color: @color; z-index: 2;}
+.gi-line{ float: left; width: 100%; height: 1px; margin-top: 70px; margin-bottom: 50px; position: relative; 
+    p{ position: absolute; top: 0; right: 25px; font-size: 14px; color: @color; z-index: 2;}
     path{ fill: #adbbc8; -webkit-transition: .3s linear; transition: .3s linear; }
-    svg{ position: absolute; width: 40px; top:-13px; left: 310px; z-index: 1;}
+    svg{ position: absolute; width: 40px; top:-13px; right: 0px; z-index: 1;}
     
     &:hover path{ fill: #8fa7bb; }
 }
