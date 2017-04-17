@@ -13,7 +13,7 @@
   
 }
 
-@media only screen and (max-width : 1400px) {
+@media only screen and (max-width : 1500px) {
     .wrap{float: left; width: 80%; margin-left: 10%; margin-right: 10%; height: auto;}
     .wrap-footer{float: left; width: 90%; margin-left: 0%; margin-right: 10%; height: auto;}
     .wrap-teacher{float: left; width: 90%; margin-left: 10%; margin-right: 0%; height: auto;}
@@ -21,6 +21,11 @@
 
 @media only screen and (max-width : 1250px) {
     .sc-left p{ font-size: 20px; }
+}
+
+@media only screen and (max-width : 1200px) {
+    .slick-slider-s{ width: 165px; }
+    .slick-slider-s .slick-prev{ left: -8px !important; }
 }
 
 @media only screen and (max-width : 1100px) {
@@ -38,16 +43,90 @@
     
     .teacher-left{ width: 150px; }
     .teacher-right{ width: calc(90% - 250px); }
+    #slick-slider-t .slick-prev, #slick-slider-t .slick-next{ top: 230px; }
+    
+    .gi-line p{ font-size: 11px; }
+    
+}
+
+@media only screen and (max-width : 900px) {
+    
+}
+
+@media only screen and (max-width : 850px) {
+    .nav-burger, .nav-numbers{ display: block; }
+    .nav-center{ width: calc(100% - 125px); text-align: center; }
+    .nav-logo, .nav-title{ float: none; display: inline-block; vertical-align: top; }
+    
+    .nav-right{ display: none; position: fixed; top: 49px; left: 0; width: 100%; height: auto; background: #44749d; -webkit-transition: .3s linear; transition: .3s linear; opacity: 0; }
+    .nav-right.nb-active {display: block; opacity: 1; }
+    .nav{ width: 100%; margin: 5px 0 0; height: 40px; text-align: center; font-family: "Qanelas-Light"; font-weight: normal; }
     
 }
 
 @media only screen and (max-width : 800px) {
+    .spd-back{ left: 30px; }
+    
+    .section-gallery h3{ margin-top: 5px; margin-bottom: 30px; }
+    .slick-back{ top: 60px; height: 350px; left: 30%; width: 40%; }
+    
+    .certificates{ width: 100%; padding: 18px; }
     .head-left{ display: none; }
     .head-right{ width: 90%;
         margin-left: 10%;
     }
     .slick-dots{ bottom: -140px; }
-    .section-price h3{margin-top: 180px;}
+    .section-price h3{ margin-top: 180px;}
+    
+    .modal-call, .modal-more{ width: 90%; }
+    .teacher-left{ width: 140px; }
+    .teacher-right{ width: calc(90% - 150px); margin-left: 40px; }
+    .teacher-right p, .teacher-right h5{ margin-top: 9px; }
+    .teacher-right h4{ font-size: 20px; }
+    
+    .section-achievement h3{ margin-top: 30px; margin-bottom: 30px; }
+    
+    .sa-left-1{ width: 100%; margin: 25px 0 0; padding: 25px; }
+    .sa-left-1 img{ position: static; float: left; width: 100px; margin-right: 15px; height: auto; }
+    .sa-left-1 h4{ width: calc(100% - 115px); font-size: 15px; }
+    .sa-left-1 p{ width: calc(100% - 115px); font-size: 13px; }
+
+    .sa-right-1, .sa-second{ width: calc(50% - 40px); margin: 25px 20px 0;}
+    .sa-second h4{ text-align: center; }
+    .sa-right-1 p,.sa-second p{ text-align: center; font-size: 13px; }
+    
+    .sa-left-2{ width: 100%; margin: 25px 0;}
+    .sa-right-1 h4, .sa-second h4, .sa-left-2 h4{ text-align: center; font-size: 80px; line-height: 80px; height: 80px; }
+    .sa-left-2 p{ width: 60%; margin: 0 20%; text-align: center; font-size: 13px; }
+    
+    .sa-right-2{ width: 100%; padding: 25px; }
+    .sa-right-2 h4{ font-size: 15px; }
+    .sa-right-2 p{ font-size: 13px; }
+    
+    .sa-prizes{ margin-top: 0; }
+    .sap-left{ width: 100%; height: auto; padding: 25px; box-sizing: border-box; }
+    .sap-left h4{ font-size: 18px; margin: 0;}
+    .sap-right{ width: 100%; margin: 0; }
+    
+    .wrap-footer{float: left; width: 100%; margin:0; height: auto;}
+    .footer-left{ width: 100%; height: 250px; }
+    .footer-right{ width: 80%; margin-top: 30px; margin-left: 10%; margin-right: 10%;}
+    
+    .footer-mob{ display: block; }
+    .footer-desk{ display: none; }
+    
+    .footer h3{ margin-top: 10px; margin-bottom: 30px;}
+    
+    .fr-row{ font-size: 13px; }
+    
+    .fr-row a{ font-size: 13px; }
+    
+    .fr-icons{ text-align: center; }
+    .fr-icon{ float: none; display: inline-block; width: 45px; }
+    
+    .gi-line{ margin-top: 55px; }
+    .gi-line svg{ right: calc( 50% - 20px ); }
+    .gi-line p{ right: 0; width: 100%; text-align: center; }
 }
 
 @media only screen and (max-width : 700px) {
@@ -56,13 +135,38 @@
     .sc-left{ width: 100%; padding-top: 40px; padding-bottom: 40px;}
     .sc-left p{ text-align: center; }
     .sc-right{ width: 100%; padding-top: 0; }
-    .scr-row{ width: 290px; }
-    
+    /*.scr-row{ width: 290px; }*/
+}
+
+@media only screen and (max-width : 600px) {
+    .header{ padding-top: 80px; }
+    h3{ font-size: 20px;}
+    .hr-row{ margin-top: 15px; font-size: 13px; }
 }
 
 @media only screen and (max-width : 450px) {
+    .modal-call, .modal-more{ margin: 110px auto; }
+    .md-row input{ width: calc(100% - 40px); } 
+    .md-btn{ width: calc(100% - 40px); } 
+    
+    .wrap{float: left; width: 90%; margin-left: 5%; margin-right: 5%; height: auto;}
+    .wrap-teacher{float: left; width: 95%; margin-left: 5%; margin-right: 0%; height: auto;}
+    
+    .footer-left{ width: 100%; height: 200px; }
+    .footer-right{ width: 90%; margin-left: 5%; margin-right: 5%;}
+    
+    .teacher-right h4{ font-size: 17px; margin-bottom: 12px; }
+    .teacher-right p, .teacher-right h5{ font-size: 13px; }
+    .teacher-left{ width: 80px; }
+    .teacher-right{ width: calc(90% - 100px); margin-left: 20px; }
+    .certificates h4{ font-size: 13px; margin-left: 0px; }
+    #slick-slider-t .slick-prev, #slick-slider-t .slick-next{ top: 140px; }
+}
+
+@media only screen and (max-width : 450px) {
+    .nav-title{ display: none; }
     h3{ font-size: 20px; }
     
-    .scr-row{ width: 230px; }
+    /*.scr-row{ width: 230px; }*/
     .spd-rows{ width: 200px; }
 }
